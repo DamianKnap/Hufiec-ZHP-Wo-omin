@@ -1,0 +1,39 @@
+// compileOnSave: false
+.pagination-nav-wrap {
+    text-align: center;
+}
+
+.pagination-nav {
+    display: inline-block;
+    margin: 2rem 0;
+    font-size: 150%;
+}
+
+.pagination-nav > span[class="page-numbers current"],
+.pagination-nav > a[class="page-numbers"],
+.pagination-nav > a[class="prev page-numbers"],
+.pagination-nav > a[class="next page-numbers"] {
+    font-family: $h_font;
+    color: $font_light;
+    background-color: $title_bg;
+    padding: 0.5rem 1rem;
+    margin: 0;
+    float: left;
+    @extend .button_transition;
+}
+
+.pagination-nav > span[class="page-numbers current"] {
+    background-color: $title_bg_hover;
+}
+
+.pagination-nav > a[class="page-numbers"]:hover,
+.pagination-nav > a[class="prev page-numbers"]:hover,
+.pagination-nav > a[class="next page-numbers"]:hover {
+    background-color: $title_bg_hover;
+}
+
+.pagination-nav > span[class="page-numbers dots"] {
+    float: left;
+    margin: 0 0.5rem;
+    color: $font_dark;
+}

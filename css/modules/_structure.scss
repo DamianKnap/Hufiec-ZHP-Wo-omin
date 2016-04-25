@@ -1,0 +1,19 @@
+// compileOnSave: false
+.card_shadow {
+    -webkit-box-shadow: 0 0 2px 0 rgba(0,0,0,0.3);
+    -moz-box-shadow: 0 0 2px 0 rgba(0,0,0,0.3);
+    box-shadow: 0 0 2px 0 rgba(0,0,0,0.3);
+}
+
+.card_shadow_important {
+    -webkit-box-shadow: 0 0 2px 0 rgba(0,0,0,0.3) !important;
+    -moz-box-shadow: 0 0 2px 0 rgba(0,0,0,0.3) !important;
+    box-shadow: 0 0 2px 0 rgba(0,0,0,0.3) !important;
+}
+
+.button_transition {
+    -o-transition: all 0.1s ease-out;
+    -moz-transition: all 0.1s ease-out;
+    -webkit-transition: all 0.1s ease-out;
+    transition: all 0.1s ease-out;
+}

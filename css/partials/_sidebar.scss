@@ -1,0 +1,84 @@
+// compileOnSave: false
+#sidebar {
+    padding-left: 1rem;
+    padding-bottom: 2rem;
+}
+
+.sidebar-wrap {
+    position: relative;
+    width: 100%;
+    padding: 0.5rem 0;
+    @extend .card_shadow;
+}
+
+h3[class="widget-title"] {
+    position: relative;
+    text-align: center;
+    color: $font_light;
+    margin: 0;
+    background-color: $title_bg_hover;
+    font-size: 100%;
+    padding: 0.5rem 0;
+}
+
+h3[class="widget-title"]:before {
+    content: " ";
+    width: 5px;
+    height: 100%;
+    position: absolute;
+    left: -5px;
+    bottom: 0;
+    background-color: $title_bg_hover;
+    z-index: 2;
+}
+
+h3[class="widget-title"]:after {
+    content: " ";
+    width: 5px;
+    height: 100%;
+    position: absolute;
+    right: -5px;
+    bottom: 0;
+    background-color: $title_bg_hover;
+    z-index: 2;
+}
+
+.widget ul {
+    position: relative;
+    padding: 1.5rem 0;
+    margin: 0;
+}
+
+.widget ul > li {
+    margin: 0.50rem 1rem;
+}
+
+.widget ul > li:first-of-type {
+    margin: 0 1rem 0.25rem 1rem;
+}
+
+.widget ul > li:last-of-type {
+    margin: 0.25rem 1rem 0 1rem;
+}
+
+.widget ul:after {
+    content: " ";
+    position: absolute;
+    left: -5px;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-top: 5px solid $title_detail;
+    border-left: 5px solid transparent;
+}
+
+.widget ul:before {
+    content: " ";
+    position: absolute;
+    right: -5px;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-top: 5px solid $title_detail;
+    border-right: 5px solid transparent;
+}

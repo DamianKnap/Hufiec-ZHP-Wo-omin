@@ -1,0 +1,316 @@
+// compileOnSave: false
+.homecard-wrap {
+    width: 33.3333%;
+    float: left;
+    height: auto;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 1rem;
+}
+
+.homecard-wrap:nth-of-type(1) {
+    padding-right: 0.5rem;
+}
+
+.homecard-wrap:nth-of-type(2) {
+    padding: 0 0.5rem;
+}
+
+.homecard-wrap:nth-of-type(3) {
+    padding-left: 0.5rem;
+}
+
+.post-excerpt-wrap,
+.adjusted-excerpt-wrap {
+    height: auto;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 1rem;
+}
+
+
+.post-excerpt-wrap {
+    width: 100%;
+}
+
+.adjusted-excerpt-wrap {
+    width: 50%;
+}
+
+.adjusted-excerpt-wrap:nth-of-type(1) {
+    float: left;
+    padding-right: 0.5rem;
+}
+
+.adjusted-excerpt-wrap:nth-of-type(2) {
+    float: right;
+    padding-left: 0.5rem;
+}
+
+.post-excerpt {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    @extend .card_shadow;
+}
+
+.post-excerpt-thumb {
+    overflow: hidden;
+    position: relative;
+    height: 20rem;
+}
+
+.post-excerpt-thumb img {
+    height: 100%;
+    max-width: none !important;
+    width: auto;
+    margin-left: 50%;
+    -ms-transform: translateX( -50% );
+    -webkit-transform: translateX( -50% );
+    transform: translateX( -50% );
+    /*max-width: none bo reset ustawia na 100%*/
+    max-width: none;
+}
+
+.post-excerpt-text {
+    position: relative;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.post-excerpt-text p {
+    line-height: 1.4rem;
+    padding: 0;
+}
+
+.post-excerpt-text h2,
+p[class="wp-caption-text"],
+.buddy-form-container h2 {
+    position: absolute;
+    left: 0;
+    max-width: 95%;
+    margin: 0;
+    color: $font_light;
+    background-color: $title_bg_hover;
+    z-index: 2;
+    -ms-transform: translateY( -100% );
+    -webkit-transform: translateY( -100% );
+    transform: translateY( -100% );
+}
+
+p[class="wp-caption-text"] {
+    bottom: 1rem;
+    padding: 0.5rem;
+    line-height: 1;
+    -ms-transform: translateY( 20% );
+    -webkit-transform: translateY( 20% );
+    transform: translateY( 20% );
+}
+
+.post-excerpt-text h2,
+.buddy-form-container h2 {
+    top: 0;
+    padding: 0.5rem 1rem 0.5rem 0.5rem;
+}
+
+.buddy-form-container h2 {
+    margin-top: 0.5rem;
+    -ms-transform: none;
+    -webkit-transform: none;
+    transform: none;
+}
+
+.post-excerpt-text h2:before,
+.event-banner-title h2:before,
+h1[class="entry-title"]:before,
+p[class="wp-caption-text"]:before,
+.buddy-form-container h2:before {
+    content: " ";
+    width: 5px;
+    height: 100%;
+    position: absolute;
+    left: -5px;
+    bottom: 0;
+    background-color: $title_bg_hover;
+    z-index: 2;
+}
+
+.post-excerpt-text h2:after,
+.event-banner-title h2:after,
+h1[class="entry-title"]:after,
+p[class="wp-caption-text"]:after,
+.buddy-form-container h2:after {
+    content: " ";
+    position: absolute;
+    left: -5px;
+    bottom: -5px;
+    width: 0;
+    height: 0;
+    border-top: 5px solid #00112b;
+    border-left: 5px solid transparent;
+}
+
+.post-excerpt-author {
+    position: relative;
+    padding: 0.5rem 0.5rem 0.3rem 0.5rem;
+}
+
+.post-excerpt-author-button {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    display: inline-block;
+    background-color: $button_bg;
+    -ms-transform: translateY( -50% );
+    -webkit-transform: translateY( -50% );
+    transform: translateY( -50% );
+    @extend .button_transition;
+}
+
+.post-excerpt-author-button a,
+.event-banner-button a {
+    display: block;
+    color: $font_light;
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+}
+
+.post-excerpt-author-button:after,
+.event-banner-button:after {
+    content: " ";
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    top: 0;
+    right: -5px;
+    background-color: $button_bg;
+    @extend .button_transition;
+}
+
+.post-excerpt-author-button:before,
+.event-banner-button:before {
+    content: " ";
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    width: 0;
+    height: 0;
+    border-top: 5px solid $button_bg_hover;
+    border-right: 5px solid transparent;
+}
+
+.post-excerpt-author-button:hover,
+.post-excerpt-author-button:hover:after,
+.event-banner-button:hover,
+.event-banner-button:hover:after {
+    background-color: $button_bg_hover;
+}
+
+.post-excerpt hr,
+.post-excerpt-author p,
+.event-banner-date p {
+    margin: 0;
+    padding: 0;
+}
+
+.post-excerpt hr:nth-of-type(1) {
+    margin-top: 0.5rem;
+}
+
+.post-excerpt-author-date {
+    position: relative;
+    display: inline-block;
+    margin: 0 0.2rem;
+}
+
+.post-excerpt-author-date p,
+.event-banner-date p {
+    font-family: $h_font;
+    line-height: 0.8;
+    margin-bottom: 0.1em;
+}
+
+.post-excerpt-author-date p:first-of-type,
+.event-banner-date p:first-of-type {
+    font-size: 2.6em;
+}
+
+.post-excerpt-author-date p:last-of-type,
+.event-banner-date p:last-of-type {
+    font-size: 1.6em;
+}
+
+.post-excerpt-author-tags {
+    position: relative;
+    display: inline-block;
+}
+
+.post-excerpt-author-tags ul > li > a {
+    line-height: 1.4;
+}
+
+.post-excerpt-author-tags ul > li:nth-of-type(4),
+.post-excerpt-author-tags ul > li:nth-of-type(5),
+.post-excerpt-author-tags ul > li:nth-of-type(6),
+.post-excerpt-author-tags ul > li:nth-of-type(7),
+.post-excerpt-author-tags ul > li:nth-of-type(8),
+.post-excerpt-author-tags ul > li:nth-of-type(9),
+.post-excerpt-author-tags ul > li:nth-of-type(10) {
+    display: none;
+}
+
+.post-excerpt-author-stats {
+    display: inline-block;
+    max-height: 60px;
+    float: right;
+    padding-right: 0.5rem;
+}
+
+.post-excerpt-author-stats table,
+.post-excerpt-author-stats tbody,
+.post-excerpt-stats table,
+.post-excerpt-stats tbody {
+    border: none;
+}
+
+.post-excerpt-stats table,
+.post-excerpt-stats tbody {
+    background-color: $post_stats_bg;
+}
+
+.post-excerpt-author-stats table td,
+.post-excerpt-stats table td {
+    vertical-align: middle;
+}
+
+.post-excerpt-author-stats table td {
+    padding-right: 0;
+}
+
+.post-excerpt-stats table td {
+    width: 15%;
+    padding: 0.25rem 0;
+}
+
+.post-excerpt-stats table td:nth-of-type( odd ) {
+    padding-right: 0.25rem;
+}
+
+.post-excerpt-stats table td:nth-of-type( even ) {
+    padding-left: 0.25rem;
+}
+
+.post-excerpt-author-stats img,
+.post-excerpt-stats img {
+    height: 40px;
+    width: auto;
+    display: block;
+}
+
+.post-excerpt-stats img {
+    float: right;
+}
+
+/*To jest by ukryć link "show more" w skrótach postów*/
+.more-link {
+    display: none !important;
+}

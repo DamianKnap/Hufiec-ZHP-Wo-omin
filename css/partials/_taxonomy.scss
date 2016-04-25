@@ -1,0 +1,32 @@
+// compileOnSave: false
+.taxonomy-nav {
+    position: relative;
+    display: block;
+    margin: 2rem 0;
+}
+
+.taxonomy-nav ul {
+    display: inline-block;
+    height: auto;
+    vertical-align: top;
+}
+
+.taxonomy-nav ul > li {
+    font-family: $h_font;
+    color: $font_dark;
+    font-size: 150%;
+    display: inline;
+    margin-right: 0.5rem;
+}
+
+.tax-house {
+    display: inline-block;
+    position: relative;
+    height: 32px;
+    width: 32px;
+    margin-right: 0.5rem;
+    background-image: url( 'assets/icons/house.png' );
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center left;
+}

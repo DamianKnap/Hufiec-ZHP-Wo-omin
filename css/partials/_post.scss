@@ -1,0 +1,169 @@
+// compileOnSave: false
+
+article a {
+    font-family: $p_font;
+}
+
+.entry-header {
+    position: relative;
+}
+
+h1[class="entry-title"] {
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    padding: 0.5rem 1rem 0.5rem 0.5rem;
+    width: auto;
+    max-width: 95%;
+    margin: 0;
+    color: $font_light;
+    background-color: $title_bg_hover;
+    z-index: 2;
+}
+
+.wp-post-image {
+    @extend .card_shadow;
+}
+
+.wp-caption,
+img.size-large {
+    position: relative;
+    max-width: 100%;
+    @extend .card_shadow;
+}
+
+.wp-caption img {
+    vertical-align: bottom;
+}
+
+/*Only for inline image*/
+.alignleft {
+    margin: 0.7em 0.7rem 0 0;
+    float: left;
+    @extend .card_shadow;
+}
+
+/*Only for inline image*/
+.alignright {
+    margin: 0.7em 0 0 0.7rem;
+    float: right;
+    @extend .card_shadow;
+}
+
+/*Only for inline image*/
+.aligncenter {
+    vertical-align: middle;
+}
+
+.gallery {
+    position: relative;
+}
+
+.gallery-item {
+    width: 48%;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden;
+    margin-bottom: 2%;
+    @extend .card_shadow;
+}
+
+.gallery-item:nth-last-of-type(odd) {
+    margin-right: 1%;
+}
+
+.gallery-item:nth-last-of-type(even) {
+    margin-left: 1%;
+}
+
+.gallery-item:before {
+    content: '';
+    display: block;
+}
+
+.ratio1-1:before {
+    padding-top: 100%;
+}
+
+.gallery-item-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.gallery-item-inner img {
+    height: 100%;
+    max-width: none !important;
+}
+
+iframe[class="instagram-media instagram-media-rendered"] {
+    border-radius: 0 !important;
+    max-width: 50% !important;
+    margin: 2rem auto !important;
+    @extend .card_shadow_important;
+}
+
+iframe[class="youtube-embed"],
+.entry-content iframe {
+    display: block;
+    margin: 2rem auto;
+    max-width: 100%;
+    @extend .card_shadow_important;
+}
+
+.no-shadow {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.share-fb-button {
+    position: relative;
+    display: inline-block;
+    max-width: 100px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.share-fb-button table,
+.share-fb-button tbody {
+    border: none;
+    height: 32px;
+    padding: 0;
+    margin: 0;
+    @extend .button_transition
+}
+
+.share-fb-button tbody {
+    background-color: $title_bg;
+}
+
+.share-fb-button table td {
+    vertical-align: middle;
+    padding: 0;
+    margin: 0;
+}
+
+.share-fb-button table tr {
+    padding: 0;
+    margin: 0;
+}
+
+.share-fb-button img {
+    height: 32px;
+    width: auto;
+    display: block;
+}
+
+.share-fb-button p {
+    color: $font_light;
+    padding: 0 0.5rem 0 0;
+    margin: 0;
+}
+
+.share-fb-button tbody:hover {
+    background-color: $title_bg_hover;
+}

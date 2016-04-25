@@ -1,0 +1,156 @@
+// compileOnSave: false
+.comment-form,
+.must-log-in,
+.comment-body {
+    padding: 0.5rem 0.5rem;
+    margin-bottom: 1rem;
+    background-color: $font_light;
+    @extend .card_shadow;
+}
+
+.must-log-in {
+    text-align: center;
+}
+
+.comment-form textarea,
+.comment-text-contener {
+    border: none;
+    border-top: 1px solid $comments_bg;
+    border-bottom: 1px solid $comments_bg;
+    box-shadow: none;
+    margin: 0;
+    background-color: white;
+}
+
+.comment-text-contener {
+    padding: 1rem 0;
+}
+
+.comment-text-contener p {
+    margin: 0.5rem;
+}
+
+.comment-form p[class="form-submit"],
+.comment-body p[class="form-submit"],
+#whats-new-submit {
+    position: relative;
+    display: table;
+    margin: 0 0 0 100%;
+    -ms-transform: translateX( -100% );
+    -webkit-transform: translateX( -100% );
+    transform: translateX( -100% );
+}
+
+.comment-form p[class="form-submit"]:after,
+.comment-body p[class="form-submit"]:after,
+#whats-new-submit:after {
+    content: " ";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #622599;
+    -ms-transform: translateX( -50% );
+    -webkit-transform: translateX( -50% );
+    transform: translateX( -50% );
+    z-index: 2;
+    @extend .button_transition;
+}
+
+.comment-form p[class="form-submit"]:hover:after,
+.comment-body p[class="form-submit"]:hover:after,
+#whats-new-submit:hover:after {
+    border-bottom: 10px solid $button_bg_hover;
+}
+
+.comment-body a[class="comment-reply-link"] {
+    background-color: $button_bg;
+    color: $font_light;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    font-family: $h_font;
+    display: block;
+    @extend .button_transition;
+}
+
+.comment-body a[class="comment-reply-link"]:hover {
+    background-color: $button_bg_hover;
+}
+
+.comment-section-profile {
+    position: relative;
+    display: inline-table;
+    background-color: $title_bg;
+}
+
+.comment-section-profile-img-wrapper {
+    position: relative;
+    display: inline-table;
+}
+
+.comment-section-profile-img-wrapper:before,
+.whats-new-avatar-img-wrapper:before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid white;
+    -ms-transform: translateX( -50% );
+    -webkit-transform: translateX( -50% );
+    transform: translateX( -50% );
+    z-index: 2;
+}
+
+.comment-section-profile-img-wrapper:after,
+.whats-new-avatar-img-wrapper:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid $comments_bg;
+    -ms-transform: translateX( -50% );
+    -webkit-transform: translateX( -50% );
+    transform: translateX( -50% );
+    z-index: 1;
+}
+
+.comment-section-profile-img-wrapper img {
+    vertical-align: middle;
+}
+
+.comment-section-profile-text-wrapper {
+    position: relative;
+    display: inline-table;
+}
+
+.comment-section-profile > .comment-section-profile-text-wrapper h3,
+.comment-section-profile-text-wrapper h3 {
+    line-height: 1;
+    font-size: 1.4rem;
+    color: $font_light;
+    padding: 0 1rem;
+}
+
+.comment-section-profile-text-wrapper h3 {
+    padding: 0;
+    color: $font_dark;
+}
+
+/*Co to robi?*/
+.main-entry-content > p,
+.tags-in-content,
+.data-in-content {
+    display: inline-block;
+}

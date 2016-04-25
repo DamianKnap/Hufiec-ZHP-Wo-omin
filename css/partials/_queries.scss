@@ -1,0 +1,392 @@
+// compileOnSave: false
+@media only screen and (max-width: 40em) {
+
+    .post-excerpt-author-button span,
+    .event-banner-button span {
+        display: none;
+    }
+
+    .post-excerpt-author-button a, .event-banner-button a {
+        font-size: 120%;
+    }
+    body {
+        font-size: 0.9rem;
+    }
+
+    .cards-area:nth-of-type(odd) {
+        padding-right: 0;
+    }
+
+    .cards-area:nth-of-type(even) {
+        padding-left: 0;
+    }
+
+    .adjusted-excerpt-wrap:nth-of-type(2) {
+        float: right;
+        padding-left: 0;
+        padding-top: 1rem;
+    }
+
+    .adjusted-excerpt-wrap:nth-of-type(1) {
+        float: right;
+        padding-right: 0;
+    }
+
+    .taxonomy-nav ul:nth-of-type(2) {
+        display: block;
+        padding-left: 2.8rem;
+    }
+
+    .post-excerpt-author-stats {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .post-excerpt-author-stats table td {
+        width: 15%;
+        padding: 4px 0 0 0;
+    }
+
+    .post-excerpt-author-stats img {
+        display: inline;;
+    }
+
+    .post-excerpt-author-stats table tr,
+    .post-excerpt-stats table tr {
+        height: 40px;
+    }
+
+    .post-excerpt-author-stats table td:nth-of-type( odd ) {
+        padding-right: 0;
+        text-align: right;
+    }
+
+    .post-excerpt-stats table td:nth-of-type( even ),
+    .post-excerpt-author-stats table td:nth-of-type( even ) {
+        padding-left: 0;
+        text-align: left;
+    }
+
+    .post-excerpt-stats table td:nth-of-type( odd ) {
+        padding-right: 0;
+    }
+
+    .contener-for-bg-instagram-picture {
+        height: calc( 102% / 5 );
+        width: calc( 100% / 3 );
+    }
+
+    .bg-for-instagram {
+        width: 100%;
+        margin: 1rem 0 0 0;
+    }
+
+    .header-picture {
+        height: 15rem;
+    }
+
+    .logo-on-bar {
+        width: 130px;
+    }
+
+    .pagination-nav {
+        font-size: 90%;
+    }
+
+    .pagination-nav > span[class="page-numbers current"],
+    .pagination-nav > a[class="page-numbers"],
+    .pagination-nav > a[class="prev page-numbers"],
+    .pagination-nav > a[class="next page-numbers"] {
+        padding: 0.5rem 0.4rem;
+    }
+
+    .pagination-nav > span[class="page-numbers dots"] {
+        padding: 0.5rem 0;
+        margin: 0;
+    }
+
+    .quotations-content {
+        height: 17rem;
+    }
+    .quotations-content-silder {
+        height: 12rem;
+    }
+
+    .picture-for-quotations img {
+        height: 50%;
+        width: auto;
+    }
+
+    .quotations-content img {
+        height: auto;
+        width: 75vw;
+    }
+
+    .slide-with-quotation {
+        margin-bottom: 0;
+    }
+
+    .partners-text-content {
+        margin-top: 1rem;
+        padding: 0.5rem
+    }
+
+    .partners-button-content {
+        margin-top: 0.5rem;
+        padding: 0.5rem;
+    }
+
+    .patners-button {
+        padding: 0.8rem;
+    }
+
+    .post-excerpt-wrap,
+    .adjusted-excerpt-wrap {
+        width: 100%;
+    }
+
+    .adjusted-excerpt-wrap {
+        padding: 0;
+    }
+
+    .post-excerpt-wrap:nth-child( odd ),
+    .post-excerpt-wrap:nth-child( even ) {
+        float: none;
+        padding: 0;
+        padding-bottom: 1rem;
+    }
+
+    .header-extras-wrap {
+        top: 0.5rem;
+    }
+
+    .header-extras {
+        padding: 0;
+    }
+
+    .header-extras-icons {
+        margin-left: 1.5rem;
+    }
+
+    .display-for-main-instagram {
+        display: none !important;
+    }
+
+    .display-for-instagram {
+        display:block !important;
+    }
+
+    // From _comments.scss
+    .comment-section-profile > .comment-section-profile-text-wrapper h3 {
+        font-size: 90%;
+        display: block;
+    }
+
+    .comment-section-profile-text-wrapper h3 {
+        display: none;
+    }
+
+    // From _post.scss
+    iframe[class="instagram-media instagram-media-rendered"] {
+        max-width: 100% !important;
+    }
+
+    // From _postexcerpt.scss
+    .homecard-wrap {
+        width: 100%;
+    }
+
+    .homecard-wrap:nth-of-type(1),
+    .homecard-wrap:nth-of-type(2),
+    .homecard-wrap:nth-of-type(3) {
+        padding: 0.5rem 0;
+    }
+
+    .event-banner-title h2 {
+        white-space: nowrap;
+        max-width: 60%;
+        right: 0;
+        left: auto;
+        font-size: 100%;
+        top: 1rem;
+        -ms-transform: translateY( 0 );
+        -webkit-transform: translateY( 0 );
+        transform: translateY( 0 );
+    }
+
+    .event-banner-title h2:before {
+        right: -5px;
+        left: auto;
+    }
+
+    .event-banner-title h2:after {
+        right: -5px;
+        left: auto;
+        bottom: -5px;
+        right: -5px;
+        width: 0;
+        height: 0;
+        border-top: 5px solid $button_bg_hover;
+        border-right: 5px solid transparent;
+        border-left: none;
+        border-bottom: none;
+    }
+
+    .event-banner-button {
+        top: 4.5rem;
+    }
+
+    .event-banner-date {
+        bottom: 1rem;
+    }
+
+} /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+
+/*Medium screens*/
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+
+    .partners-text-content {
+        padding:0 0.5rem
+    }
+
+    .partners-button-content {
+
+        padding:0 0.5rem;
+    }
+
+    .adjusted-excerpt-wrap:nth-of-type(2) {
+        float: right;
+        padding-left: 0;
+        padding-top: 1rem;
+    }
+
+    .adjusted-excerpt-wrap:nth-of-type(1) {
+        float: right;
+        padding-right: 0;
+    }
+
+    .nav-list {
+        font-size: 100%;
+    }
+
+    .contener-for-bg-instagram-picture {
+        height: calc( 102% / 5 );
+        width: calc( 100% / 3 );
+    }
+
+    .logo-on-bar {
+        width: 150px;
+    }
+
+    .pagination-nav {
+        font-size: 80%;
+    }
+
+    .post-excerpt-thumb {
+        height: 26rem;
+    }
+
+    .post-excerpt-wrap:nth-child( odd ),
+    .post-excerpt-wrap:nth-child( even ) {
+        float: none;
+        padding: 0;
+        padding-bottom: 1rem;
+    }
+
+    .post-excerpt-wrap,
+    .adjusted-excerpt-wrap {
+        width: 100%;
+    }
+
+    .adjusted-excerpt-wrap {
+        padding: 0;
+    }
+
+    // From _post.scss
+    iframe[class="instagram-media instagram-media-rendered"] {
+        max-width: 80% !important;
+    }
+
+    // From _postexcerpt.scss
+    .homecard-wrap {
+        width: 100%;
+    }
+
+    .homecard-wrap > .post-excerpt > .post-excerpt-thumb {
+        height: 35rem;
+    }
+
+    .homecard-wrap:nth-of-type(1),
+    .homecard-wrap:nth-of-type(2),
+    .homecard-wrap:nth-of-type(3) {
+        padding: 0.5rem 0;
+    }
+
+} /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+
+/*Specjalne media queries dla nawigacji. Nie dotykac, nic tutaj nie wrzucac*/
+@media only screen and (min-width: 640px) and (max-width: 899px) {
+
+    .post-excerpt-author-stats {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .post-excerpt-author-stats table td {
+        width: 15%;
+        padding: 4px 0 0 0;
+    }
+
+    .post-excerpt-author-stats img {
+        display: inline;;
+    }
+
+    .post-excerpt-author-stats table tr,
+    .post-excerpt-stats table tr {
+        text-align: center;
+        height: 40px;
+    }
+
+    .post-excerpt-author-stats table td:nth-of-type( odd ) {
+        padding-right: 0;
+        text-align: right;
+    }
+
+    .post-excerpt-stats table td:nth-of-type( even ),
+    .post-excerpt-author-stats table td:nth-of-type( even ) {
+        padding-left: 0;
+        text-align: left;
+    }
+
+    .post-excerpt-stats table td:nth-of-type( odd ) {
+        padding-right: 0;
+    }
+
+    .nav-bar > .show-for-small-only {
+        display: block !important;
+    }
+
+    .nav-bar > .hide-for-small-only {
+        display: none !important;
+    }
+    .fb-page {
+            margin: 0 calc((100% - 340px) / 2);
+    }
+
+    .bg-for-instagram {
+        width: 100%;
+        margin: 1rem 0 0 0;
+    }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 960px) {
+    .nav-list {
+        font-size: 90%;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1160px) {
+    .nav-list {
+        font-size: 100%;
+    }
+}

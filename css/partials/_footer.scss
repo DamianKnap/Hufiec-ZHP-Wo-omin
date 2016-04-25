@@ -1,0 +1,35 @@
+// compileOnSave: false
+.footer-page-map {
+    padding: 2rem 0;
+}
+
+.footer-menu a {
+    color: $font_light;
+}
+
+.footer-menu > .menu-item-has-children a {
+    color: $font_light;
+}
+
+.footer-menu > .menu-item > a {
+    text-decoration: underline;
+}
+
+.footer-menu > .menu-item-has-children > .sub-menu a  {
+    color: $font_light;
+}
+
+.footer-page-map {
+    background-color: $footer_bg;
+}
+
+.footer-logo-slider {
+    padding: 1rem;
+}
+
+.logo-in-footer {
+    height: 4rem;
+    width: auto;
+    padding: 0 1em;
+    margin:5px 10px;
+}

@@ -1,0 +1,103 @@
+// compileOnSave: false
+.event-banner-wrap {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 10rem;
+    margin: 1rem 0;
+    @extend .card_shadow;
+}
+
+.event-banner-wrap:first-of-type {
+    margin-top: 1rem;
+}
+
+.event-banner-wrap:last-of-type {
+    margin-bottom: 2rem;
+}
+
+.event-banner-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.event-banner-image img {
+    height: 100%;
+    max-width: none !important;
+    width: auto;
+    margin-left: 50%;
+    -ms-transform: translateX( -50% );
+    -webkit-transform: translateX( -50% );
+    transform: translateX( -50% );
+}
+
+.event-banner-title {
+    overflow: hidden;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.event-banner-title span {
+    display: block;
+    width: 107%;
+    overflow: hidden;
+}
+
+.event-banner-title h2 {
+    position: absolute;
+    left: 0;
+    color: $font_light;
+    background-color: $title_bg_hover;
+    z-index: 2;
+    -ms-transform: translateY( 50% );
+    -webkit-transform: translateY( 50% );
+    transform: translateY( 50% );
+    padding: 0.5rem 1rem 0.5rem 0.5rem;
+}
+
+.event-banner-button {
+    position: absolute;
+    right: 0;
+    top: 2rem;
+    display: inline-block;
+    background-color: $button_bg;
+    -o-transition: all 0.1s ease-out;
+    -moz-transition: all 0.1s ease-out;
+    -webkit-transition: all 0.1s ease-out;
+    transition: all 0.1s ease-out;
+    z-index: 2;
+}
+
+.event-banner-date {
+    position: absolute;
+    right: 1rem;
+    bottom: 2rem;
+    display: inline-block;
+    z-index: 2;
+}
+
+.event-banner-whitespace-wrap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.event-banner-whitespace {
+    position: absolute;
+    width: 18rem;
+    height: 100%;
+    top: 0;
+    right: -5rem;
+    background-color: white;
+    -ms-transform: skewX( -45deg );
+    -webkit-transform: skewX( -45deg );
+    transform: skewX( -45deg );
+}

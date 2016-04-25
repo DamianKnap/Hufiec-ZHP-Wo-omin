@@ -1,0 +1,38 @@
+// compileOnSave: false
+@keyframes notification_fadeout {
+    to { opacity: 0; }
+}
+
+@-webkit-keyframes notification_fadeout {
+    to { opacity: 0; }
+}
+
+@-moz-keyframes notification_fadeout {
+    to { opacity: 0; }
+}
+
+#buddy {
+    padding: 4rem 0 2rem 0;
+}
+
+#message.bp-template-notice.updated {
+    position: fixed;
+    display: block;
+    bottom: 1rem;
+    left: 50%;
+    width: auto;
+    z-index: 10;
+    -ms-transform: translateX( -50% );
+    -webkit-transform: translateX( -50% );
+    transform: translateX( -50% );
+    animation: notification_fadeout 0.2s ease-in 3s forwards;
+    -moz-animation: notification_fadeout 0.2s ease-in 3s forwards;
+    -webkit-animation: notification_fadeout 0.2s ease-in 3s forwards;
+}
+
+#message.bp-template-notice.updated p {
+    font-family: museo300, serif;
+    color: $font_light;
+    padding: 0.5rem;
+    background-color: $title_bg;
+}

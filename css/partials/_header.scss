@@ -1,0 +1,281 @@
+// compileOnSave: false
+.header-picture {
+    position: relative;
+    display: block;
+    background-image: url( 'assets/bg/header_picture.jpg' );
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: 25rem;
+    border-right: 1em solid $footer_bg;
+    border-left: 1em solid $footer_bg;
+}
+
+.header-extras-wrap {
+    position: absolute;
+    display: block;
+    width: 100%;
+    bottom: 0.5rem;
+    z-index: 10;
+}
+
+.header-extras-spacer {
+    position: relative;
+    display: inline-block;
+    height: 32px;
+    width: 100%;
+}
+
+.header-extras {
+    padding: 0 1rem;
+}
+
+form[class="searchform"] > .input-group > input[type="text"] {
+    font-family: $p_font;
+    color: $font_dark;
+    position: relative;
+    display: inline-block;
+    height: 32px;
+    padding: 0 0.5rem;
+    margin: 0;
+    border: none;
+    @extend .card_shadow;
+}
+
+form[class="searchform"] > .input-group > .input-group-button > input[type="submit"] {
+    font-family: $h_font;
+    position: relative;
+    display: inline-block;
+    background-color: $title_bg;
+    height: 32px;
+    padding: 0 0.5rem;
+    margin: 0;
+    @extend .card_shadow;
+    @extend .button_transition;
+}
+
+form[class="searchform"] > .input-group > .input-group-button > input[type="submit"]:hover {
+    background-color: $title_bg_hover;
+}
+
+.social-icon {
+    position: relative;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-color: $title_bg;
+    background-size: cover;
+    background-position: center;
+    float: left;
+    @extend .button_transition;
+}
+
+.social-icon:hover,
+.social-icon:hover > .social-icon.icon-facebook:after,
+.social-icon:hover > .social-icon.icon-facebook:before
+{
+    background-color: $title_bg_hover;
+}
+
+.icon-facebook {
+    background-image: url( 'assets/icons/facebook.png' );
+}
+
+.icon-instagram {
+    background-image: url( 'assets/icons/instagram.png' );
+}
+
+.icon-rss {
+    background-image: url( 'assets/icons/rss.png' );
+}
+
+.header-extras-profile,
+.header-extras-icons,
+.must-log-in-extras {
+    position: relative;
+    display: inline-block;
+    height: 32px;
+    width: auto;
+    @extend .card_shadow;
+}
+
+.header-extras-profile img {
+    float: left;
+}
+
+.header-extras-profile p,
+.must-log-in-extras p {
+    position: relative;
+    display: inline-block;
+    font-family: $h_font;
+    float: left;
+    line-height: 2;
+    color: $font_light;
+    background-color: $title_bg;
+    height: 32px;
+    margin: 0;
+    padding: 0 0.5rem;
+    @extend .button_transition;
+}
+
+.header-extras-profile p:hover,
+.must-log-in-extras p:hover {
+    background-color: $title_bg_hover;
+}
+
+.tiny-line {
+    height: 0.3rem;
+    background-color: $line_bg;
+}
+
+.tiny-spacer {
+    margin-bottom: 5rem;
+}
+
+.nav-bar-wrap {
+    position: relative;
+    display: table;
+    width: 100%;
+    background-color: $main_nav_bg;
+}
+
+.nav-bar {
+    padding: 0 1rem;
+}
+
+.mobile-nav p {
+    display: block;
+    padding: 0.7rem 0.4rem;
+    margin: 0;
+    line-height: 1;
+    cursor: pointer;
+    font-family: $h_font;
+}
+
+ul[class="menu"] > li,
+.mobile-nav p {
+    @extend .button_transition;
+}
+
+ul[class="menu"] > li:hover,
+.mobile-nav p:hover {
+    background-color: $main_nav_bg_hover;
+}
+
+ul[class="sub-menu"] {
+    margin: 0;
+    /*ten padding jest rowny wartosci paddingu lewo-prawo obiektu 'a' rodzica*/
+    padding: 0.7rem 1rem;
+}
+
+ul[class="sub-menu"] a {
+    font-size: 80%;
+    text-align: left;
+}
+
+ul[class="sub-menu"] > li {
+    display: block;
+    padding-bottom: 0.7rem;
+}
+
+ul[class="sub-menu"] > li:last-of-type {
+    display: block;
+    padding-bottom: 0;
+}
+
+.menu > .menu-item-has-children {
+    @extend .button_transition;
+}
+
+.menu > .menu-item-has-children > .sub-menu {
+    position: absolute;
+    visibility: hidden;
+    @extend .button_transition;
+}
+
+.menu > .menu-item-has-children:hover > .sub-menu {
+    visibility: visible;
+    top: inherit;
+    left: inherit;
+    z-index: 100;
+    background-color: $main_nav_bg_hover;
+}
+
+.logo-on-bar {
+    position: absolute;
+    -ms-transform: translate( -50%, -50% );
+    -webkit-transform: translate( -50%, -50% );
+    transform: translate( -50%, -50% );
+    left: 50%;
+    height: auto;
+    width: 200px;
+    display: inline-block;
+}
+
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 120%;
+}
+
+.nav-list li {
+    display: inline-block;
+}
+
+.nav-list a,
+.mobile-nav p {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: $font_light;
+}
+
+.mobile-nav p {
+    text-align: right;
+    font-size: 1rem;
+}
+
+.mobile-nav-sub {
+    max-height: 0;
+    overflow: hidden;
+    // To jest inny transition jak ten z modules/structure
+    -o-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+}
+
+.mobile-nav-sub > .nav-list > ul > li > a {
+    text-align: left;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-decoration: underline;
+}
+
+.mobile-nav-sub > .nav-list > ul > li {
+    display: block;
+}
+
+.mobile-nav-sub > .nav-list > ul > li > .sub-menu {
+    position: relative;
+    visibility: visible;
+    display: inline-block;
+}
+
+.mobile-nav-sub > .nav-list > ul > li > .sub-menu > a {
+    font-size: 100%;
+}
+
+.mobile-nav:hover > .mobile-nav-sub {
+    max-height: 5000px;
+}
+
+.mourning {
+    height: 25em;
+    width: 4em;
+    background-color: black;
+    -ms-transform: rotate(45deg) translateY(-35%) translateX(-65%);
+    -webkit-transform: rotate(45deg) translateY(-35%) translateX(-65%);
+    transform: rotate(45deg) translateY(-35%) translateX(-65%);
+}

@@ -1,0 +1,150 @@
+.buddy-profile-panel {
+    padding-right: 2rem;
+}
+
+.buddy-profile-panel-wrapper {
+    @extend .card_shadow;
+}
+
+.photo {
+    vertical-align: bottom;
+}
+
+.buddy-profile-panel-nav {
+    // padding: 1rem 0.5rem;
+}
+
+.buddy-profile-panel-nav li,
+#post-mention {
+    position: relative;
+    background-color: $title_bg;
+    cursor: pointer;
+    @extend .button_transition;
+}
+
+.buddy-profile-panel-nav li:hover,
+#buddy-item-body #subnav ul li:hover,
+#post-mention:hover {
+    background-color: $title_bg_hover;
+}
+
+.buddy-profile-panel-nav li a,
+#post-mention a {
+    display: block;
+    padding: 0.5rem;
+    width: calc( 100% - ( 26px + 0.5rem ) );
+    margin-left: calc( 26px + 0.5rem );
+    color: $font_light;
+}
+
+.buddy-profile-panel-nav li[id="xprofile-personal-li"]:before,
+.buddy-profile-panel-nav li[id="activity-personal-li"]:before,
+.buddy-profile-panel-nav li[id="notifications-personal-li"]:before,
+.buddy-profile-panel-nav li[id="settings-personal-li"]:before,
+#post-mention:before {
+    content: ' ';
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    top: 50%;
+    left: 0.5rem;
+    background-size: cover;
+    -ms-transform: translateY( -50% );
+    -webkit-transform: translateY( -50% );
+    transform: translateY( -50% );
+}
+
+.buddy-profile-panel-nav li[id="xprofile-personal-li"]:before {
+    background-image: url( 'assets/icons/xprofile_light.png' );
+}
+
+.buddy-profile-panel-nav li[id="activity-personal-li"]:before {
+    background-image: url( 'assets/icons/activity_light.png' );
+}
+
+.buddy-profile-panel-nav li[id="notifications-personal-li"]:before {
+    background-image: url( 'assets/icons/notifications_light.png' );
+}
+
+.buddy-profile-panel-nav li[id="settings-personal-li"]:before {
+    background-image: url( 'assets/icons/settings_light.png' );
+}
+
+.buddy-profile-panel-nav li[id="settings-personal-li"]:before {
+    background-image: url( 'assets/icons/settings_light.png' );
+}
+
+#post-mention:before {
+    background-image: url( 'assets/icons/mention_light.png' );
+}
+
+#buddy-item-body #subnav {
+    margin-bottom: 2rem;
+}
+
+#buddy-item-body #subnav ul li {
+    display: inline-block;
+    background-color: $title_bg;
+    cursor: pointer;
+    @extend .button_transition;
+}
+
+#buddy-item-body #subnav ul li[class="last"],
+#buddy-item-body #subnav ul li[class="last filter"] {
+    background-color: transparent;
+    float: right;
+}
+
+#buddy-item-body #subnav ul li a {
+    display: block;
+    padding: 0.5rem;
+    color: $font_light;
+}
+
+#buddy-item-body #subnav ul li[id="activity-filter-select"] select,
+#buddy-item-body #subnav ul li[id="members-order-select"] select {
+    margin: 0;
+    height: auto;
+    padding: calc( 0.5rem - 2px );
+    padding-right: 2rem;
+    cursor: pointer;
+    background-image: url( 'assets/icons/select_dark.png' );
+    background-origin: padding-box;
+    background-size: 40px 20px;
+}
+
+#whats-new-form {
+    margin-bottom: 2rem;
+}
+
+.activity-meta .button {
+    margin-left: -4px;
+}
+
+.activity-meta .button:first-of-type {
+    margin-left: 0;
+}
+
+#whats-new-avatar {
+    display: table;
+}
+
+.whats-new-avatar-text-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#whats-new-avatar a {
+    display: inline-block;
+}
+
+#whats-new-avatar h5 {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    padding-left: 1rem;
+}
+
+.whats-new-avatar-img-wrapper {
+    position: relative;
+}
