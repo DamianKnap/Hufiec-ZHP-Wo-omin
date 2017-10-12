@@ -1,4 +1,4 @@
-#ZOLA
+# ZOLA
 
 Made by [EJDK](https://ejdk.pl)
 
@@ -14,7 +14,7 @@ Version v0.9.160416
 
 [Roadmap](ROADMAP.md)
 
-##Uses
+## Uses
 
 [Foundation](http://foundation.zurb.com/)
 
@@ -26,9 +26,9 @@ Version v0.9.160416
 
 [Templarians Windows Phone Icons](https://github.com/Templarian/WindowsIcons)
 
-##Need
+## Need
 
 [BuddyPress](https://buddypress.org/)
 
-##Screenshot
+## Screenshot
 ![alt text](README.jpg "ZOLA")
